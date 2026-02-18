@@ -10,7 +10,7 @@
   "plugins": [
     {
       "name": "konstruktinterview",
-      "source": "./plugins/konstruktinterview",
+      "source": "./konstruktinterview",
       "description": "Entwicklung und Auswertung von Konstruktinterviews nach König/Volmer (2018) im Kontext systemischer Organisationsberatung",
       "version": "1.0.0",
       "author": {
