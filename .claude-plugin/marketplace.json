@@ -1,0 +1,21 @@
+{
+  "name": "konstruktinterview-marketplace",
+  "owner": {
+    "name": "Yannik Fleer"
+  },
+  "metadata": {
+    "description": "Plugins für qualitative Interviewmethodik nach König/Volmer (2018)",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "konstruktinterview",
+      "source": "./plugins/konstruktinterview",
+      "description": "Entwicklung und Auswertung von Konstruktinterviews nach König/Volmer (2018) im Kontext systemischer Organisationsberatung",
+      "version": "1.0.0",
+      "author": {
+        "name": "Yannik Fleer"
+      }
+    }
+  ]
+}

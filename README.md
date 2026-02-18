@@ -1,6 +1,6 @@
-# Konstruktinterview Plugin
+# Konstruktinterview Plugin Marketplace
 
-Claude Plugin zur Entwicklung und Auswertung von Konstruktinterviews nach König/Volmer (2018, Handbuch Systemische Organisationsberatung).
+Plugin Marketplace für Claude mit Skills zur Entwicklung und Auswertung von Konstruktinterviews nach König/Volmer (2018, Handbuch Systemische Organisationsberatung).
 
 ## Skills
 
@@ -13,17 +13,21 @@ Claude Plugin zur Entwicklung und Auswertung von Konstruktinterviews nach König
 
 ### Claude Cowork
 
-```bash
-claude --plugin-dir ./konstruktinterview-plugin
+Marketplace hinzufügen und Plugin installieren:
+
+```
+/plugin marketplace add bourdieuesk/konstruktinterview-plugin
+/plugin install konstruktinterview@konstruktinterview-marketplace
 ```
 
 ### Claude Code
 
-Skills nach `~/.claude/skills/` kopieren oder verlinken:
+Skills nach `~/.claude/skills/` verlinken:
 
 ```bash
-ln -s /pfad/zu/konstruktinterview-plugin/skills/interview-develop ~/.claude/skills/interview-develop
-ln -s /pfad/zu/konstruktinterview-plugin/skills/interview-evaluate ~/.claude/skills/interview-evaluate
+REPO=/pfad/zu/konstruktinterview-plugin
+ln -s "$REPO/plugins/konstruktinterview/skills/interview-develop" ~/.claude/skills/interview-develop
+ln -s "$REPO/plugins/konstruktinterview/skills/interview-evaluate" ~/.claude/skills/interview-evaluate
 ```
 
 ### claude.ai / Claude Desktop
