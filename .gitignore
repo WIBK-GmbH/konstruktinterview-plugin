@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+
+# Arbeitsdateien einer Auswertung. Die Skill-Dokumentation gibt genau diese
+# Dateinamen als Aufrufbeispiele vor; sie enthalten Klarnamen, Rohzitate und
+# Klientendaten und gehören nie in ein Repository. Das getrackte
+# references/beispiel_codierung.json ist eine .json und bleibt unberührt.
+VERTRAULICH_*
+Codierung_*.xlsx
+*.xlsx
+*.pptx
+*.potx
+pruefprotokoll.json
+~$*

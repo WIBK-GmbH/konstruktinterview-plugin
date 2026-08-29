@@ -1,7 +1,7 @@
 {
   "name": "konstruktinterview",
-  "description": "Entwicklung und Auswertung von Konstruktinterviews nach König/Volmer (2018) im Kontext systemischer Organisationsberatung",
-  "version": "1.0.0",
+  "description": "Entwicklung und Auswertung von Konstruktinterviews nach König/Volmer (2018) im Kontext systemischer Organisationsberatung. Die Auswertung codiert das Material inhaltsanalytisch und erzeugt eine Excel-Arbeitsmappe als Datenwahrheit sowie ein daraus abgeleitetes Ergebnisdokument.",
+  "version": "2.0.0",
   "author": {
     "name": "Yannik Fleer"
   }
