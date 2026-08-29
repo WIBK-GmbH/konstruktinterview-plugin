@@ -1,0 +1,143 @@
+{
+  "_hinweis": "Erfundener Übungsfall. Der mittelständische Möbelhersteller Firma M. verlagert seine Fertigung an einen zweiten Standort. Sechs Konstruktinterviews, 32 Codiereinheiten, zwei Hauptkategorien mit je zwei Unterkategorien. Alle Personen, Äußerungen und Kategorien sind konstruiert und dienen nur als Formatbeispiel.",
+  "meta": {
+    "projekt": "Übungsfall Firma M.: Verlagerung der Fertigung",
+    "gegenstand": "Inhaltsanalytische Auswertung der Konstruktinterviews zur geplanten Verlagerung der Fertigung an einen zweiten Standort",
+    "stand": "15.03.2026 (Version {version}, vollständig codiert)",
+    "umfang": "{n} Interviews vollständig erhoben und codiert ({einheiten} Einheiten gesamt)",
+    "auswertungsmethode": "Qualitative Inhaltsanalyse nach Mayring ({kategorien} Unterkategorien in {hauptkategorien} Hauptkategorien)",
+    "codierregeln": "MECE-Kategoriensystem; Bewertungen: + positiv, - negativ, o neutral, > Veränderungswunsch; Vorrang: > vor -, - und + vor o",
+    "kernaussagen": "Mit '*' markierte Äußerungen bilden den kuratierten Zitatpool für das Ergebnisdokument. Ohne Markierung wird nicht zitiert.",
+    "ankerbeispiele": "real",
+    "anonymisierungshinweis": "Klarnamen sowie Orts-, Rollen- und Funktionsbezeichnungen sind vollständig pseudonymisiert. Ersetzungen stehen in eckigen Klammern und sind wiederkehrend wortgleich.",
+    "n_personen": 6,
+    "version": 1
+  },
+  "personen": [
+    { "kennung": "P01", "perspektivgruppe": "Fertigung", "quellenart": "transkript" },
+    { "kennung": "P02", "perspektivgruppe": "Verwaltung und Vertrieb", "quellenart": "transkript" },
+    { "kennung": "P03", "perspektivgruppe": "Fertigung", "quellenart": "transkript" },
+    { "kennung": "P04", "perspektivgruppe": "Verwaltung und Vertrieb", "quellenart": "transkript" },
+    { "kennung": "P05", "perspektivgruppe": "Verwaltung und Vertrieb", "quellenart": "transkript" },
+    { "kennung": "P06", "perspektivgruppe": "Fertigung", "quellenart": "mitschrift" }
+  ],
+  "perspektivgruppen": [
+    { "name": "Fertigung", "kennungen": ["P01", "P03", "P06"] },
+    { "name": "Verwaltung und Vertrieb", "kennungen": ["P02", "P04", "P05"] }
+  ],
+  "kategoriensystem": [
+    {
+      "nummer": "1",
+      "ebene": "haupt",
+      "bezeichnung": "Information und Kommunikation über die Verlagerung",
+      "definition": "Oberkategorie für alle Äußerungen dazu, wie die Beschäftigten vom Stand der Verlagerung erfahren und wie belastbar das Mitgeteilte ist."
+    },
+    {
+      "nummer": "1.1",
+      "ebene": "unter",
+      "bezeichnung": "Informationsfluss zum Stand der Verlagerung",
+      "definition": "Wege, Zeitpunkte und Kanäle, über die die Beschäftigten vom Planungsstand erfahren (Betriebsversammlung, Aushang, Führungslinie, informelle Wege, Frequenz der Information, Gefälle zwischen den Standorten).",
+      "ankerbeispiel": "„Wir erfahren Neuigkeiten zur Verlagerung meistens zuerst in der Kantine und nicht von der Leitung.“ (P01)",
+      "codierregel": "Hier codieren, wenn es um Weg, Zeitpunkt oder Vollständigkeit der Information geht. Abgrenzung zu 1.2: 1.2 behandelt die Verlässlichkeit einmal gegebener Zusagen, nicht ihre Verbreitung."
+    },
+    {
+      "nummer": "1.2",
+      "ebene": "unter",
+      "bezeichnung": "Verbindlichkeit von Zusagen",
+      "definition": "Erfahrungen mit der Einhaltung, Nachverfolgung und Schriftlichkeit von Zusagen der Leitung (Fristen, Schriftform, Nachhalten offener Punkte, Vertrauen in gegebene Zusagen).",
+      "ankerbeispiel": "„Wenn eine Zusage dreimal verschoben wird, glaubt sie in der Halle niemand mehr.“ (P03)",
+      "codierregel": "Hier codieren, wenn eine Zusage, ihre Einhaltung oder ihre Nachverfolgung Gegenstand der Äußerung ist. Reine Informationswege gehören zu 1.1. Bei Äußerungen, die beides berühren, hat 1.2 Vorrang."
+    },
+    {
+      "nummer": "2",
+      "ebene": "haupt",
+      "bezeichnung": "Beteiligung an der Gestaltung",
+      "definition": "Oberkategorie für alle Äußerungen dazu, wie weit die Beschäftigten an der Gestaltung der Verlagerung mitwirken und was der Zusammenhalt der Teams dabei bedeutet."
+    },
+    {
+      "nummer": "2.1",
+      "ebene": "unter",
+      "bezeichnung": "Reichweite der Mitwirkung",
+      "definition": "Vorstellungen darüber, wie weit Mitwirkung reichen soll und wie sie bisher erlebt wird (Mitentscheiden, Mitreden in fester Runde, bloßes Informiertwerden, Zeitpunkt der Einbindung, Mandat der Beteiligungsformate).",
+      "ankerbeispiel": "„Die Werkstattrunde im Juni war der erste Termin, bei dem wirklich etwas aus der Halle übernommen wurde.“ (P05)",
+      "codierregel": "Hier codieren, wenn die Äußerung Reichweite, Zeitpunkt oder Mandat der Mitwirkung betrifft. Abgrenzung zu 2.2: 2.2 behandelt die sozialen Beziehungen in und zwischen den Teams, nicht ihre Beteiligungsrechte."
+    },
+    {
+      "nummer": "2.2",
+      "ebene": "unter",
+      "bezeichnung": "Zusammenhalt der Teams",
+      "definition": "Einschätzungen zum Zusammenhalt der bestehenden Arbeitsgruppen und zu seiner Gefährdung durch die Verlagerung (eingespielte Teams, gemeinsame Vorerfahrung, Kontakt zwischen den Standorten, gemeinsamer Wechsel).",
+      "ankerbeispiel": "„Meine größte Sorge ist, dass die eingespielten Teams beim Umzug auseinandergerissen werden.“ (P01)",
+      "codierregel": "Hier codieren, wenn Zusammenhalt, Zusammensetzung oder Kontakt der Teams Gegenstand ist. Fragen der Beteiligungsrechte gehören zu 2.1."
+    }
+  ],
+  "aussagen": [
+    { "kennung": "P01", "kategorie": "1.1", "bewertung": "-", "kernaussage": true, "reihenfolge": 4,
+      "aeusserung": "Wir erfahren Neuigkeiten zur Verlagerung meistens zuerst in der Kantine und nicht von der Leitung." },
+    { "kennung": "P01", "kategorie": "1.1", "bewertung": "o", "kernaussage": false, "reihenfolge": 7,
+      "aeusserung": "[Zum Ablauf:] Es gibt seit dem Frühjahr eine monatliche Runde, in der der Stand der Planung vorgestellt wird." },
+    { "kennung": "P02", "kategorie": "1.1", "bewertung": "+", "kernaussage": false, "reihenfolge": 5,
+      "aeusserung": "Die letzte Betriebsversammlung war gut gemacht, weil dort auch die unangenehmen Fragen zugelassen wurden." },
+    { "kennung": "P03", "kategorie": "1.1", "bewertung": "-", "kernaussage": false, "reihenfolge": 3,
+      "aeusserung": "Zwischen zwei Runden vergehen Wochen, in denen niemand weiß, wie weit die Planung inzwischen gediehen ist." },
+    { "kennung": "P03", "kategorie": "1.1", "bewertung": ">", "kernaussage": false, "reihenfolge": 9,
+      "aeusserung": "Ich brauche eine feste Stelle, an der ich den aktuellen Stand jederzeit nachlesen kann." },
+    { "kennung": "P04", "kategorie": "1.1", "bewertung": "o", "kernaussage": false, "reihenfolge": 6,
+      "aeusserung": "Ich bekomme die Informationen über die Bereichsleitung und gebe sie in der Frühbesprechung weiter." },
+    { "kennung": "P05", "kategorie": "1.1", "bewertung": ">", "kernaussage": true, "reihenfolge": 8,
+      "aeusserung": "Die Information muss an beiden Standorten gleichzeitig ankommen, sonst entsteht sofort wieder ein Gefälle." },
+    { "kennung": "P06", "kategorie": "1.1", "bewertung": "-", "kernaussage": false, "reihenfolge": 2,
+      "aeusserung": "Aushänge am schwarzen Brett: älter als das, was in der Halle längst besprochen wird." },
+    { "kennung": "P06", "kategorie": "1.1", "bewertung": ">", "kernaussage": false, "reihenfolge": 10,
+      "aeusserung": "[Wunsch:] Ein kurzer schriftlicher Stand alle zwei Wochen, auch wenn sich nichts bewegt hat." },
+
+    { "kennung": "P01", "kategorie": "1.2", "bewertung": "-", "kernaussage": false, "reihenfolge": 12,
+      "aeusserung": "Die Zusage zur Fahrtkostenregelung steht seit Monaten im Raum, schriftlich haben wir sie bis heute nicht [bekommen]." },
+    { "kennung": "P01", "kategorie": "1.2", "bewertung": ">", "kernaussage": false, "reihenfolge": 14,
+      "aeusserung": "[Zur Nachverfolgung:] Die offenen Zusagen gehören in eine Liste, die in jeder Runde aufgerufen wird." },
+    { "kennung": "P02", "kategorie": "1.2", "bewertung": "o", "kernaussage": false, "reihenfolge": 2,
+      "aeusserung": "Wir haben im Frühjahr zugesagt, dass niemand betriebsbedingt gehen muss." },
+    { "kennung": "P03", "kategorie": "1.2", "bewertung": "-", "kernaussage": true, "reihenfolge": 5,
+      "aeusserung": "Wenn eine Zusage dreimal verschoben wird, glaubt sie in der Halle niemand mehr." },
+    { "kennung": "P04", "kategorie": "1.2", "bewertung": ">", "kernaussage": false, "reihenfolge": 7,
+      "aeusserung": "Jede Zusage braucht ein Datum und einen Namen, sonst bleibt sie eine Absichtserklärung." },
+    { "kennung": "P05", "kategorie": "1.2", "bewertung": "+", "kernaussage": false, "reihenfolge": 4,
+      "aeusserung": "Bei der Schichtplanung wurde eingehalten, was zugesagt war, und das hat viel Vertrauen zurückgebracht." },
+    { "kennung": "P06", "kategorie": "1.2", "bewertung": ">", "kernaussage": false, "reihenfolge": 6,
+      "aeusserung": "Lieber weniger versprechen und das Wenige dann auch wirklich halten, das wäre mir am liebsten." },
+
+    { "kennung": "P01", "kategorie": "2.1", "bewertung": ">", "kernaussage": false, "reihenfolge": 11,
+      "aeusserung": "Bei der Aufstellung der Maschinen [am zweiten Standort] wollen wir mitentscheiden und nicht nur gehört werden." },
+    { "kennung": "P01", "kategorie": "2.1", "bewertung": "-", "kernaussage": false, "reihenfolge": 15,
+      "aeusserung": "Wir kommen mit der Beteiligung nicht schnell genug voran, weil jede Runde neue Fragen aufwirft." },
+    { "kennung": "P01", "kategorie": "2.1", "bewertung": "-", "kernaussage": false, "reihenfolge": 16,
+      "aeusserung": "Für [eine Fachabteilung] ist der Zeitplan viel zu eng gesetzt, um überhaupt mitwirken zu können." },
+    { "kennung": "P03", "kategorie": "2.1", "bewertung": "o", "kernaussage": false, "reihenfolge": 8,
+      "aeusserung": "Wir sind bisher zweimal gefragt worden, beide Male ging es um die Reihenfolge der Umzüge." },
+    { "kennung": "P03", "kategorie": "2.1", "bewertung": ">", "kernaussage": true, "reihenfolge": 13,
+      "aeusserung": "Mitreden lohnt sich nur in einer festen Runde mit klarem Mandat, alles andere kostet nur Zeit." },
+    { "kennung": "P04", "kategorie": "2.1", "bewertung": "o", "kernaussage": false, "reihenfolge": 11,
+      "aeusserung": "In der Verwaltung sind wir bisher vor allem über die Termine eingebunden worden." },
+    { "kennung": "P05", "kategorie": "2.1", "bewertung": "+", "kernaussage": true, "reihenfolge": 7,
+      "aeusserung": "Die Werkstattrunde im Juni war der erste Termin, bei dem wirklich etwas aus der Halle übernommen wurde." },
+    { "kennung": "P06", "kategorie": "2.1", "bewertung": "-", "kernaussage": false, "reihenfolge": 5,
+      "aeusserung": "Man holt uns erst dazu, wenn die Entscheidung im Grunde schon gefallen ist." },
+    { "kennung": "P06", "kategorie": "2.1", "bewertung": ">", "kernaussage": false, "reihenfolge": 12,
+      "aeusserung": "Wer die Abläufe kennt, sollte die Taktung mitbestimmen, sonst planen wir an der Wirklichkeit vorbei." },
+
+    { "kennung": "P01", "kategorie": "2.2", "bewertung": "-", "kernaussage": true, "reihenfolge": 18,
+      "aeusserung": "Meine größte Sorge ist, dass die eingespielten Teams beim Umzug auseinandergerissen werden." },
+    { "kennung": "P02", "kategorie": "2.2", "bewertung": "+", "kernaussage": false, "reihenfolge": 12,
+      "aeusserung": "Der Zusammenhalt in den Werkstätten ist das größte Pfund, das wir bei der Verlagerung haben." },
+    { "kennung": "P03", "kategorie": "2.2", "bewertung": "-", "kernaussage": false, "reihenfolge": 15,
+      "aeusserung": "Ohne sie [die Kolleginnen aus der Endmontage] lässt sich der Ablauf gar nicht planen." },
+    { "kennung": "P04", "kategorie": "2.2", "bewertung": "o", "kernaussage": false, "reihenfolge": 14,
+      "aeusserung": "In der Verwaltung arbeiten die meisten schon lange zusammen und kennen die kurzen Wege." },
+    { "kennung": "P05", "kategorie": "2.2", "bewertung": "o", "kernaussage": false, "reihenfolge": 10,
+      "aeusserung": "Wir haben [den Umbau der Lackiererei] damals in vier Wochen gemeinsam geschafft." },
+    { "kennung": "P05", "kategorie": "2.2", "bewertung": "-", "kernaussage": false, "reihenfolge": 13,
+      "aeusserung": "Zwischen den beiden Standorten fehlt bisher jede Gelegenheit, sich persönlich kennenzulernen." },
+    { "kennung": "P06", "kategorie": "2.2", "bewertung": ">", "kernaussage": false, "reihenfolge": 17,
+      "aeusserung": "Die Teams sollten möglichst zusammen wechseln, dann tragen sie die Verlagerung auch mit." }
+  ]
+}
