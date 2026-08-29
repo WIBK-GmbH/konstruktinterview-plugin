@@ -5,7 +5,7 @@ description: >
   Nutze diesen Skill wenn der User Interviewtranskripte, -notizen oder -protokolle
   auswerten, codieren oder zu einem Ergebnisbericht zusammenfassen möchte.
 argument-hint: [Pfad zu Interviewdaten oder Beschreibung des Kontexts]
-allowed-tools: Read, Glob, Grep, Write, WebSearch
+allowed-tools: Read, Glob, Grep, Write, WebSearch, AskUserQuestion, Task, Workflow
 ---
 
 # Konstruktinterview-Auswertung
@@ -23,6 +23,11 @@ Kernaussagen herauszufiltern. Dabei werden sowohl qualitative (welche
 Auffassungen werden vertreten?) als auch quantitative (wie häufig?) Aspekte
 berücksichtigt.
 
+Die Auswertung läuft **standardmäßig sequenziell**. Optional kann sie als
+Multi-Agent-Workflow (**ultracode**) laufen – mit mehreren unabhängigen Codierern
+und Prüf-Gates für Zitattreue, Häufigkeiten und Anonymisierung. Beide Pfade
+erzeugen denselben Auswertungsbericht; die Wahl trifft Schritt 1b.
+
 ## Vorgehen – 4 Schritte
 
 ### Schritt 1: Datenbasis sichten und verstehen
@@ -33,6 +38,38 @@ Frage den User nach:
 - **Interviewdaten** (Transkripte, Notizen, Protokolle – als Dateien oder Text)
 
 Lies alle bereitgestellten Interviewdaten vollständig.
+
+### Schritt 1b: Auswertungsmodus wählen
+
+Jetzt kennst du die zwei entscheidungsrelevanten Größen: Anzahl Transkripte (N)
+und Anzahl Perspektivgruppen (G). Frage den User **einmal** (via
+`AskUserQuestion`), wie ausgewertet werden soll.
+
+**Bypass:** Hat der User den Skill bereits mit dem Stichwort `ultracode`
+gestartet, überspringe die Frage und nutze direkt den Multi-Agent-Pfad.
+
+**Empfehlung in die Frage einblenden:**
+- N ≤ 3 oder nur eine Perspektivgruppe → Standard empfehlen ("Bei dieser
+  Datenmenge bringt der Multi-Agent-Overhead keinen Zeitvorteil, erhöht aber das
+  Konsistenzrisiko.")
+- N ≥ 9 und mehrere Perspektivgruppen → Ultracode empfehlen.
+
+Frage: „Du hast {N} Interviews aus {G} Perspektivgruppen vorliegen. Wie soll ich
+auswerten?" — Header „Auswertungsmodus", Einfachauswahl. Optionen:
+
+| Option | Beschreibung |
+|--------|--------------|
+| **Standard (sequenziell)** | Ein Agent durchläuft Codierung, Kategoriensystem und Auswertung nacheinander. Schnell, token-sparsam, Schritt für Schritt nachvollziehbar. Empfohlen bis ca. 8 Interviews. |
+| **Ultracode (Multi-Agent)** | Mehrere Sub-Agenten codieren parallel, ein Orchestrator führt zu EINEM Kategoriensystem zusammen und prüft Zitate, Dedup und Anonymisierung gegen. Gründlicher bei vielen Transkripten/Perspektivgruppen, aber deutlich mehr Token und Laufzeit. Empfohlen ab ca. 9 Interviews. |
+| **Ultracode + Doppelcodierung** | Wie Ultracode, zusätzlich codiert ein zweiter Agent jedes Transkript unabhängig nach; Abweichungen werden als Codiersignal ausgewiesen (Inter-Coder-Heuristik). Höchste methodische Absicherung, höchster Aufwand. |
+
+**Default:** Standard (sequenziell).
+
+**Weiche:**
+- Modus = **Standard** → fahre mit Schritt 2 sequenziell fort.
+- Modus = **Ultracode** / **Ultracode + Doppelcodierung** → folge der
+  Orchestrierungsanleitung in `references/ultracode-mode.md`. Sie verzweigt nur
+  das WIE der Schritte 2–3 und mündet in dasselbe Schritt 4 (Output-Format unten).
 
 ### Schritt 2: Relevante Textstellen codieren
 
