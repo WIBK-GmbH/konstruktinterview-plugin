@@ -63,13 +63,13 @@ Gehe jedes Interview systematisch durch:
 6. **Kernaussagen markieren**: Besonders pointierte Äußerungen mit `*` markieren.
 
 Erstelle eine Tabelle (je Feld nur ein Inhalt, Äußerung möglichst wörtlich):
-| IV-Nr. | Zelle | Kategorie | Bewertung | Kernaussage | Äußerung (geglättet) |
-|--------|-------|-----------|-----------|-------------|---------------------|
-| 1 | FK | [später] | + | * | "..." |
+| IV-Nr. | Zelle | Kategorie | Bewertung | Kernaussage | Äußerung (geglättet) | Fundstelle |
+|--------|-------|-----------|-----------|-------------|---------------------|------------|
+| 1 | FK | [später] | + | * | "..." | [Zeitmarke oder Zeile] |
 
 „Zelle“ ist die Gruppe aus der Stichprobe (z.B. Führungskraft, Mitarbeitende, Kunde).
-Gib zu jeder Äußerung die Fundstelle im Transkript an, damit der Wortlaut
-später geprüft werden kann.
+Die Fundstelle (Zeitmarke oder Zeile im Transkript) ermöglicht es, den Wortlaut
+später zu prüfen.
 
 ### Schritt 3: Kategoriensystem entwickeln
 
@@ -177,6 +177,9 @@ Positiv (+):
 
 Negativ (-):
 > "..." (IV-7, Mitarbeitende)
+
+Neutral (o):
+> "..." (IV-2, Mitarbeitende)
 
 Anregungen (>):
 > "..." (IV-5, Kunde)
